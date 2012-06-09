@@ -15,9 +15,10 @@
 
 $french = array(
 'unvalidatedemailchange:no_user_guid_provided' => 'Il manque le GUID de l\'utilisateur.',
-'unvalidatedemailchange:user_email_changed_to' => 'Adresse e-mail de l\'utilisateur %s changée en %s.',
+'unvalidatedemailchange:user_email_changed_to' => 'Adresse e-mail de l\'utilisateur %s changÃ©e en %s.',
 'unvalidatedemailchange:email_address_invalid' => 'L\'adresse email fournie %s n\'est pas valide.',
 'unvalidatedemailchange:new_user_email' => 'Entrez l\'adresse e-mail pour %s: ',
 'unvalidatedemailchange:change_email' => 'Modifier l\'adresse e-mail',
 );
 add_translation("fr",$french);
+

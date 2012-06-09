@@ -1,6 +1,6 @@
 Unvalidated Email Change plugin
-Latest Version: 1.8.0
-Released: 2012-05-28
+Latest Version: 1.8.1
+Released: 2012-06-09
 Contact: iionly@gmx.de
 License: GNU General Public License version 2
 Copyright: (c) iionly
@@ -33,6 +33,10 @@ Installation:
 
 
 Changelog:
+
+1.8.1:
+
+- French translation added (thank to emanwebdev),
 
 1.8.0:
 
