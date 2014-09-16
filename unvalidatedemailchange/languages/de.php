@@ -13,5 +13,8 @@ $german = array(
 'unvalidatedemailchange:email_address_invalid' => 'Die angegebene Email-Adresse %s ist unzulässig.',
 'unvalidatedemailchange:new_user_email' => 'Gebe die neue Email-Addresse für den Benutzer %s ein: ',
 'unvalidatedemailchange:change_email' => 'Email-Adresse ändern',
+
+'unvalidatedemailchange:ip_address' => 'IP-Adresse: ',
+'unvalidatedemailchange:no_ip_address' => 'Keine IP-Adresse geloggt.'
 );
 add_translation("de",$german);

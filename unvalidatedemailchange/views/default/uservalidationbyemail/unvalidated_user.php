@@ -30,9 +30,9 @@ $validate = elgg_view('output/confirmlink', array(
 ));
 
 $change_email = elgg_view('output/url', array(
-        'href' => "ajax/view/unvalidatedemailchange/change_email/?user_guid=$user->guid&user_name=$user->username",
-        'class' => 'elgg-lightbox',
-        'text' => elgg_echo('unvalidatedemailchange:change_email')
+	'href' => "ajax/view/unvalidatedemailchange/change_email/?user_guid=$user->guid&user_name=$user->username",
+	'class' => 'elgg-lightbox',
+	'text' => elgg_echo('unvalidatedemailchange:change_email')
 ));
 
 $resend_email = elgg_view('output/confirmlink', array(
@@ -44,8 +44,21 @@ $resend_email = elgg_view('output/confirmlink', array(
 $delete = elgg_view('output/confirmlink', array(
 	'confirm' => elgg_echo('uservalidationbyemail:confirm_delete', array($user->username)),
 	'href' => "action/uservalidationbyemail/delete/?user_guids[]=$user->guid",
-	'text' => elgg_echo('uservalidationbyemail:admin:delete')
+	'text' => elgg_echo('delete')
 ));
+
+if (elgg_is_active_plugin('tracker')) {
+	$hidden_entities = access_get_show_hidden_status();
+	access_show_hidden_entities(true);
+	$ipaddress = $user->ip_address;
+	access_show_hidden_entities($hidden_entities);
+	if (!empty($ipaddress)) {
+		$created = elgg_echo('unvalidatedemailchange:ip_address') . $ipaddress . "<br>" . $created;
+	} else {
+		$created = elgg_echo('unvalidatedemailchange:no_ip_address')."<br>" . $created;
+	}
+}
+
 $menu = 'test';
 $block = <<<___END
 	<label>$user->username: "$user->name" &lt;$user->email&gt;</label>

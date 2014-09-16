@@ -19,6 +19,8 @@ $french = array(
 'unvalidatedemailchange:email_address_invalid' => 'L\'adresse email fournie %s n\'est pas valide.',
 'unvalidatedemailchange:new_user_email' => 'Entrez l\'adresse e-mail pour %s: ',
 'unvalidatedemailchange:change_email' => 'Modifier l\'adresse e-mail',
+
+'unvalidatedemailchange:ip_address' => 'Adresse ip: ',
+'unvalidatedemailchange:no_ip_address' => 'Pas d\'adresse IP enregistrée.'
 );
 add_translation("fr",$french);
-

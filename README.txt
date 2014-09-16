@@ -1,6 +1,6 @@
 Unvalidated Email Change plugin
-Latest Version: 1.8.1
-Released: 2012-06-09
+Latest Version: 1.8.2
+Released: 2014-09-16
 Contact: iionly@gmx.de
 License: GNU General Public License version 2
 Copyright: (c) iionly
@@ -8,7 +8,7 @@ Copyright: (c) iionly
 
 Requirements:
 
-This plugin uses the elgg_register_ajax_view() function introduced with Elgg 1.8.3. Therefore you need to have at least Elgg 1.8.3 installed. You also need to have the bundled uservalidationbyemail plugin enabled and the unvalidatedemailchange plugin must be placed below it.
+This plugin uses the elgg_register_ajax_view() function introduced with Elgg 1.8.3. Therefore you need to have at least Elgg 1.8.3 installed. You also need to have the bundled uservalidationbyemail plugin enabled and the unvalidatedemailchange plugin must be placed below it. Optional is the IP Tracker plugin.
 
 
 
@@ -16,6 +16,7 @@ What this plugin does:
 
 This plugin adds the option to change the email address of unvalidated user accounts to the Elgg core unvalidated user account administration page (menu option "Administer" - "Users" - "Unvalidated" in admin section). This option might be useful in case the email address provided when registering the account is invalid (for example only due to a typo) and therefore resending of the validation email to the orginal address is doomed to bounce. If you know the correct address for this user, you can change the email address and then resend the validation email to the new email address.
 
+If you have also the IP Tracker plugin installed, you will also see the IP addresses these accounts have been registered from.
 
 
 Credits:
@@ -33,6 +34,10 @@ Installation:
 
 
 Changelog:
+
+1.8.2:
+
+- show IP addresses used when registering the unvalidated accounts.
 
 1.8.1:
 
